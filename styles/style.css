@@ -17,40 +17,6 @@ body {
    /* overflow: hidden; */
 }
 
-/* Turn Back */
-.back {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   margin: 40px;
-   width: 130px;
-   height: 50px;
-   background-color: var(--second-background);
-   border: 0;
-}
-
-.back-link {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   height: 100%;
-   text-decoration: none;
-   font-size: 20px;
-   border: solid black 3px;
-}
-
-.back-link:hover {
-   background-color: #4e4e4e;
-   border: solid rgb(255, 255, 255) 3px;
-   color: white;
-}
-
-.back-link,
-.title {
-   color: rgb(0, 0, 0);
-}
-
 /* Nigh Mode */
 .night-mode {
    width: 70px;
