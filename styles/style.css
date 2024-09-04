@@ -1,0 +1,273 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+:root {
+   --main-font: rgb(0, 0, 0);
+   --main-hover: rgb(204, 0, 255);
+   --main-background: rgb(255, 224, 224);
+   --second-background: rgb(156, 69, 145);
+}
+
+* {
+   font-family: monospace;
+}
+
+body {
+   background-color: var(--main-background);
+   height: 100vh;
+   /* overflow: hidden; */
+}
+
+/* Turn Back */
+.back {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   margin: 40px;
+   width: 130px;
+   height: 50px;
+   background-color: var(--second-background);
+   border: 0;
+}
+
+.back-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   font-size: 20px;
+   border: solid black 3px;
+}
+
+.back-link:hover {
+   background-color: #4e4e4e;
+   border: solid rgb(255, 255, 255) 3px;
+   color: white;
+}
+
+.back-link,
+.title {
+   color: rgb(0, 0, 0);
+}
+
+/* Nigh Mode */
+.night-mode {
+   width: 70px;
+   height: 70px;
+   background-color: var(--second-background);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   margin: 30px;
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   padding-top: 5px;
+   border-radius: 50%;
+}
+
+/* TITLE */
+.title {
+   font-family: 'Minecraft';
+   background-color: var(--second-background);
+   padding: 30px;
+   padding-bottom: 40px;
+   width: 100vw;
+   text-align: center;
+   border-bottom: solid black 3px;
+   font-size: 45px;
+   font-weight: 100;
+}
+
+/* INFORMATION */
+.information {
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+.container-result {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 15px;
+   width: 100%;
+   margin-bottom: 80px;
+}
+
+.result {
+   color: red;
+   font-size: 40px;
+   text-align: center;
+   display: block;
+   margin-bottom: 10px;
+}
+
+.result-description {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#computer-selection,
+#user-selection {
+   flex: 1;
+   text-align: center;
+}
+
+.user-animation-false {
+   transition: 0.3s ease;
+}
+
+.user-animation {
+   transform: translateY(-30px);
+}
+
+.computer-animation-false {
+   transition: 0.3s ease;
+}
+
+.computer-animation {
+   transform: translateY(-30px);
+}
+
+/* SELECTION */
+.selection {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 30px;
+   flex-wrap: wrap;
+   gap: 40px;
+   max-width: 900px;
+   margin: 0 auto;
+   margin-top: 40px;
+}
+
+.selection>button {
+   width: 180px;
+   height: 180px;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   background-color: rgb(36, 36, 36);
+   border: 0;
+   font-size: 90px;
+   padding-bottom: 10px;
+   transition: ease 0.5s;
+}
+
+#Paper {
+   transform: rotate(90deg);
+}
+
+.button:hover {
+   border-left: solid var(--main-hover) 15px;
+   transform: translate(0, -10px);
+   transform: rotate(-90deg);
+}
+
+.button#Paper:hover {
+   transform: rotate(0deg);
+   border-left: 0;
+   border-bottom: solid var(--main-hover) 15px;
+}
+
+/* MEDIA QUERIES */
+@media (width < 700px) {
+   .back-link {
+      font-size: 15px;
+   }
+
+   /* INFORMATION */
+   .title {
+      font-size: 30px;
+      padding: 20px;
+      padding-bottom: 25px;
+   }
+
+   .result {
+      font-size: 35px;
+      word-spacing: -8px;
+   }
+
+   .result-description {
+      font-size: 18px;
+      height: 44px;
+   }
+
+   #user-selection,
+   #computer-selection,
+   .user-selection,
+   .computer-selection {
+      font-size: 22px;
+   }
+
+   .container-result {
+      margin-bottom: 30px;
+   }
+
+   /* SELECTION */
+   .selection {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 30px;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 10px;
+   }
+
+   .selection>button {
+      width: 110px;
+      height: 110px;
+   }
+
+   .button {
+      font-size: 60px;
+   }
+
+   /* Options container */
+   .options-container {
+      display: flex;
+   }
+
+   /* Turn back */
+   .back {
+      position: initial;
+      flex: 1;
+      margin: 0;
+      border-right: solid black 3px;
+   }
+
+   .back-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      border: 0;
+      color: white;
+   }
+
+   .back,
+   .night-mode {
+      height: 55px;
+      border-bottom: solid black 3px;
+   }
+
+   /* Night Mode */
+   .night-mode {
+      position: initial;
+      flex: 1;
+      margin: 0;
+      font-size: 30px;
+      padding-top: 0;
+      border-radius: 0;
+   }
+}

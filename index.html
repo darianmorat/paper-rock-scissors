@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Paper rock</title>
+   <link rel="stylesheet" href="../reset.css" />
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <div class="options-container">
+      <!-- Turn Back -->
+      <div class="back">
+         <a href="../index.html" class="back-link">BACK</a>
+      </div>
+      <!-- Night Mode -->
+      <div class="night-mode">
+         <span class="dark">🌖</span>
+         <span class="light">☀️</span>
+         <!-- on larger screen, when u click it changes the icon -->
+      </div>
+   </div>
+
+   <!-- INFORMATION -->
+   <h1 class="title">ROCK PAPER & SCISSORS</h1>
+
+   <div class="information">
+      <div class="container-result">
+         <h1><span class="result">Who would WIN?</span></h1>
+         <p class="result-description">First player on getting 5 points WIN</p>
+      </div>
+      <h1 id="user-selection" class="user-animation-false">
+         DEFAULT: <span class="user-selection">0</span>
+      </h1>
+      <h1 id="computer-selection" class="computer-animation-false">
+         COMPUTER: <span class="computer-selection">0</span>
+      </h1>
+   </div>
+
+   <!-- SELECTION -->
+   <div class="selection">
+      <button class="button" id="Rock">✊</button>
+      <button class="button" id="Paper">🫲</button>
+      <button class="button" id="Scissors">✌️</button>
+   </div>
+
+   <!-- SCRIPT -->
+   <script src="main.js"></script>
+</body>
+
+</html>
